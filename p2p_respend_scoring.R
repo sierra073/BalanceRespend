@@ -21,7 +21,6 @@ modelTarget <- as.h2o(pred_base)
 m = h2o.loadModel(path = "file:///C:/Users/scostanza/Documents/Modeling/P2P_Respend/GBM_model_R", conn = h2o.getConnection())
 
 d.pred <- h2o.predict(gbm_model, newdata = modelTarget)
-print(paste(Sys.time(), "..........model scoring complete, preparing to write data into disk.........."))
 
 h2o_output <- h2o.cbind(modelTarget$cust_id, d.pred$predict, d.pred$p1)
 
