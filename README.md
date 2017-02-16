@@ -1,2 +1,2 @@
 # BalanceRespend
-Model to predict liklihood of re-spening balance commercially
+Model to predict likelihood of re-spending balance commercially
